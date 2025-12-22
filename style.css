@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: auto;
+  padding: 15px;
+  background: #f9f9f9;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+}
+
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background: #2e86de;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: #1b4f72;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
