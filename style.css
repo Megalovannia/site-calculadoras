@@ -18,7 +18,7 @@ body {
 
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
 
   position: relative;
   z-index: 100;
@@ -29,13 +29,22 @@ body {
   font-weight: bold;
   color: #0070f3;
 
-  padding: 6px 10px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+
+  border-radius: 6px;
 }
 
 .topo a:hover {
-  text-decoration: underline;
+  background: #eef4ff;
+  text-decoration: none;
 }
+
 
 /* ==================================================
    BOTÃO VOLTAR
