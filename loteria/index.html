@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Último Resultado da Mega-Sena</title>
+  <meta name="description" content="Veja o último resultado da Mega-Sena atualizado automaticamente.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <h1>Resultado da Mega-Sena</h1>
+
+  <p id="status">Carregando resultado...</p>
+  <div id="resultado"></div>
+
+  <script>
+    fetch("https://loteriascaixa-api.herokuapp.com/api/megasena/latest")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("status").innerText =
+          `Concurso ${data.concurso} - ${data.data}`;
+
+        document.getElementById("resultado").innerHTML =
+          `<strong>Números sorteados:</strong> ${data.dezenas.join(" - ")}`;
+      })
+      .catch(() => {
+        document.getElementById("status").innerText =
+          "Erro ao carregar o resultado.";
+      });
+  </script>
+
+</body>
+</html>
