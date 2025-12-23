@@ -1,14 +1,38 @@
+/* ==================================================
+   BASE
+================================================== */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  max-width: 700px;
-  margin: auto;
-  padding: 15px;
   background: #f9f9f9;
+  color: #333;
 }
 
-/* ===== BOTÃO VOLTAR ===== */
+/* ==================================================
+   MENU / TOPO
+================================================== */
+.topo {
+  background: #ffffff;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.topo a {
+  margin-right: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0070f3;
+}
+
+.topo a:hover {
+  text-decoration: underline;
+}
+
+/* ==================================================
+   BOTÃO VOLTAR
+================================================== */
 button.voltar {
-  margin: 12px;
+  margin: 12px 16px;
   padding: 10px 16px;
   background: #0070f3;
   color: white;
@@ -16,40 +40,105 @@ button.voltar {
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
+  width: auto;
+  display: inline-block;
 }
 
 button.voltar:hover {
   background: #0059c1;
 }
 
+/* ==================================================
+   CONTAINER / CONTEÚDO
+================================================== */
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* ==================================================
+   TÍTULOS E TEXTO
+================================================== */
 h1 {
   font-size: 1.8rem;
+  margin-top: 0;
 }
 
-label {
-  margin-top: 10px;
-  display: block;
-}
-
-input, button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 5px;
-  font-size: 1rem;
-}
-
-button {
-  background: #2e86de;
-  color: white;
-  border: none;
-  border-radius: 6px;
-}
-
-button:hover {
-  background: #1b4f72;
+h2 {
+  margin-top: 30px;
 }
 
 p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+/* ==================================================
+   LISTA HOME
+================================================== */
+.lista-calculadoras {
+  padding-left: 20px;
+}
+
+.lista-calculadoras li {
+  margin: 12px 0;
+}
+
+.lista-calculadoras a {
+  color: #0070f3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.lista-calculadoras a:hover {
+  text-decoration: underline;
+}
+
+/* ==================================================
+   FORMULÁRIOS / INPUTS
+================================================== */
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Botões de formulário (não afeta botão voltar) */
+button.form-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  font-size: 1rem;
+  background: #2e86de;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.form-btn:hover {
+  background: #1b4f72;
+}
+
+/* ==================================================
+   RODAPÉ
+================================================== */
+.rodape {
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
 }
