@@ -7,12 +7,19 @@ body {
 }
 
 /* ===== BOTÃO VOLTAR ===== */
-.voltar {
-  display: inline-block;
+button.voltar {
   margin: 12px;
-  text-decoration: none;
-  color: #0070f3;
+  padding: 10px 16px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+button.voltar:hover {
+  background: #0059c1;
 }
 
 h1 {
