@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Média Ponderada Online</title>
+  <meta name="description" content="Calcule a média ponderada online informando valores e seus respectivos pesos. Simples e gratuito.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <!-- ===== MENU ===== -->
+  <nav class="topo">
+    <a href="/">🏠 Home</a>
+    <a href="/imc/">📊 IMC</a>
+    <a href="/juros/">💰 Juros</a>
+    <a href="/porcentagem/">➗ Porcentagem</a>
+    <a href="/loteria/">🎰 Loteria</a>
+  </nav>
+
+  <!-- ===== BOTÃO VOLTAR ===== -->
+  <button class="voltar" onclick="history.back()">⬅ Voltar</button>
+
+  <!-- ===== CONTEÚDO ===== -->
+  <main class="container">
+    <h1>Calculadora de Média Ponderada</h1>
+
+    <p>
+      Informe os valores e seus respectivos pesos separados por vírgula.
+    </p>
+
+    <label for="valores">Valores</label>
+    <input type="text" id="valores" placeholder="Ex: 7,8,6">
+
+    <label for="pesos">Pesos</label>
+    <input type="text" id="pesos" placeholder="Ex: 2,3,1">
+
+    <button class="form-btn" onclick="calcularMediaPonderada()">
+      Calcular média ponderada
+    </button>
+
+    <p id="resultado"></p>
+  </main>
+
+  <footer class="rodape">
+    © 2026 • Calculadoras Online Gratuitas
+  </footer>
+
+  <script src="media-ponderada.js"></script>
+</body>
+</html>
