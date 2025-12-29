@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Média Online Grátis</title>
+  <meta name="description" content="Calcule a média de números online de forma simples e rápida. Ideal para notas e cálculos escolares.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS GLOBAL -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <!-- ===== MENU ===== -->
+  <nav class="topo">
+    <a href="/">🏠 Home</a>
+    <a href="/imc/">📊 IMC</a>
+    <a href="/juros/">💰 Juros</a>
+    <a href="/porcentagem/">➗ Porcentagem</a>
+    <a href="/loteria/">🎰 Loteria</a>
+  </nav>
+
+  <!-- ===== BOTÃO VOLTAR ===== -->
+  <button class="voltar" onclick="history.back()">⬅ Voltar</button>
+
+  <!-- ===== CONTEÚDO ===== -->
+  <main class="container">
+    <h1>Calculadora de Média</h1>
+
+    <p>
+      Digite os números separados por vírgula para calcular a média.
+      Exemplo: <strong>7, 8, 6, 9</strong>
+    </p>
+
+    <label for="numeros">Números</label>
+    <input type="text" id="numeros" placeholder="Ex: 7,8,6,9">
+
+    <button class="form-btn" onclick="calcularMedia()">Calcular média</button>
+
+    <p id="resultado"></p>
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="rodape">
+    © 2026 • Calculadoras Online Gratuitas
+  </footer>
+
+  <script src="media.js"></script>
+</body>
+</html>
